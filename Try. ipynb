@@ -93,3 +93,18 @@ As we can see, these are flower images, but with art variations.
 Generative models are powerful architectures, which allow us to generate a diverse variety of data. It is interesting to see how these models can approximate the real data distribution using the game-theory framework. Although, in this project, the generator is the one who generates the data, we cannot ignore the importance of the discriminator, which also acted as a teacher. Once said that, we also need to consider the trade-off in the training procedure, since we are dealing with two models, instead of one. Finally, the model was able to learn to generate artistic flowers using just a random noise vector as input.
 
 </p>
+
+
+# Imports here
+import matplotlib.pyplot as plt
+import numpy as np
+import torch
+from torch import nn
+from torch import optim
+import torch.nn.functional as F
+from torchvision import datasets, transforms, models
+import torchvision.models as models
+from PIL import Image
+import json
+from matplotlib.ticker import FormatStrFormatter
+
